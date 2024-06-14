@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+
+spring:
+  application:
+    name: User-Service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecomm
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  api-docs:
+    enabled: true
+
+mail:
+  send-url: http://localhost:8081/email/send

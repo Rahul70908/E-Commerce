@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Notification-Service
+  mail:
+    host: smtp.gmail.com
+    username:
+    password:
+    port: 587
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+springdoc:
+  api-docs:
+    enabled: true
+
+server:
+  port: 8081
